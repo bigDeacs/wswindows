@@ -55,7 +55,7 @@ return [
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'manillaglass'),
+			'database'  => env('DB_DATABASE', 'wswindows'),
 			'username'  => env('DB_USERNAME', 'forge'),
 			'password'  => env('DB_PASSWORD', 'L4C62vjnRDWCEfC7CIgW'),
 			'charset'   => 'utf8',
