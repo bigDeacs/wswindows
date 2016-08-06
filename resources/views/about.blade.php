@@ -29,8 +29,8 @@
     </div>
 
     <div class="tag-box tag-box-v2">
-        <h2>About Manilla Glass</h2>
-        <p>When you look at Manilla Glass, you will see more than just windows, doors, and other products. You will see a company with years of history backed by industry experience. Manilla Glass proudly serves Manilla and surrounding regions. We are a window manufacturer with a deep commitment to helping you find the right products with the least amount of frustration. Manilla's windows, doors, and other products are made to measure. Although our products are made to measure, our commitment to quality cannot be measured. We take pride in creating a better view for you. At Manilla Glass, you will see the dedication to service of a highly-skilled team of local professionals. Our range of quality products together with our professional and personal service ensures we can provide you with a wide range of architectural window and door products. Contact us today!</p>
+        <h2>About Wood Street Windows</h2>
+        <p>When you look at Wood Street Windows, you will see more than just windows, doors, and other products. You will see a company with years of history backed by industry experience. Wood Street Windows proudly serves Wood Street Windows and surrounding regions. We are a window manufacturer with a deep commitment to helping you find the right products with the least amount of frustration. Wood Street Windows's windows, doors, and other products are made to measure. Although our products are made to measure, our commitment to quality cannot be measured. We take pride in creating a better view for you. At Wood Street Windows, you will see the dedication to service of a highly-skilled team of local professionals. Our range of quality products together with our professional and personal service ensures we can provide you with a wide range of architectural window and door products. Contact us today!</p>
     </div>
 
     <div class="margin-bottom-20 clearfix"></div>
@@ -54,11 +54,11 @@
                                     <img alt="" src="{{ asset('/img/about/quote.jpg') }}" class="img-responsive">
                                 </div>
                                 <div class="col-md-8">
-                                    Manilla Glass reps are courteous, knowledgeable and they value your time. 
+                                    Wood Street Windows reps are courteous, knowledgeable and they value your time. 
 									Once our rep knows exactly what you need for your project, they
 									will write up a full quote then and there. 
 									<br /><br />Get the information you need to make an informed decision about windows and doors for your 
-									Manilla home or office. Contact us today!
+									Wood Street Windows home or office. Contact us today!
                                 </div>
                             </div>
                         </div>
@@ -78,8 +78,8 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     Don't want to wait? We don't want you to either. We want our customers to be excited about every 
-									aspect of doing business with Manilla Glass. That's why we run a tight and efficient schedule. 
-									<br /><br />Manilla homes and businesses deserve fast and efficient service. We beat the competition and 
+									aspect of doing business with Wood Street Windows. That's why we run a tight and efficient schedule. 
+									<br /><br />Wood Street Windows homes and businesses deserve fast and efficient service. We beat the competition and 
 									provide excellent service and value quickly.
                                 </div>
                                 <div class="col-md-4">
@@ -107,7 +107,7 @@
 								<div class="col-md-8">
 									Many window and door companies operate essentially as middlemen, buying from the manufacturer, 
 									marking-up and warehousing on a shelf until bringing the window to a customer's home or office. 
-									<br /><br />At Manilla Glass, we are the manufacturer, making both home and office windows right here in our facility. 
+									<br /><br />At Wood Street Windows, we are the manufacturer, making both home and office windows right here in our facility. 
 									This allows us complete quality control, and gives us the ability to make sure the glass delivered and 
 									installed at your home or business meets the highest standard.
 								</div>
@@ -131,7 +131,7 @@
                                     Honest, fast and accurate quotes...Dedication to the lowest lead times...Highest quality standards. 
 									Though we are always looking for ways to show more dedication to our customers, 
 									we have accomplished a trifecta of loyalty, service and standards. 
-									<br /><br />Think of us as the window and door company that wants Manilla to shine through your home or office.
+									<br /><br />Think of us as the window and door company that wants Wood Street Windows to shine through your home or office.
                                 </div>
                                 <div class="col-md-4">
                                     <img alt="" src="{{ asset('/img/about/extra.jpg') }}" class="img-responsive">

@@ -49,8 +49,8 @@
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-md-9 col-xs-12">
-	                <h1><span>Dedicated to service of the highest quality.</span></h1>
-	                <p class="hidden-xs"> Our range of quality products together with our professional and personal service ensures we can provide you with a wide range of architectural window and door products.</p>
+	                <h1><span>High quality aluminium windows and doors.</span></h1>
+	                <p class="hidden-xs">Wood Street Windows is a local, family-owned-and-operated business dedicated to providing a wide variety of products.</p>
 	            </div>            
 	            <div class="col-md-3 hidden-xs">
 	                <a href="/about" class="btn-more btn-more-orange hover-effect">Find Out More</a>            
@@ -113,19 +113,13 @@
 			<div class="row">
 		    	<!-- Welcome Block -->
 				<div class="col-md-9 hidden-xs">
-					<div class="headline"><h4>Welcome To Manilla Glass</h4></div>
+					<div class="headline"><h4>Welcome To Wood Street Windows</h4></div>
 		            <div class="row">
 		                <div class="col-sm-4">
 		                    <img class="img-responsive margin-bottom-20" src="{{ asset('/img/about/extra.jpg') }}" alt="" />
 		                </div>
 		                <div class="col-sm-8">
-							<p>For any job, look to us for:</p>
-		                    <ul class="list-unstyled margin-bottom-20">
-		                        <li><i class="icon-ok"></i> No Obligation Quotes</li>
-		                        <li><i class="icon-ok"></i> Competitively Short Lead Times</li>
-		                        <li><i class="icon-ok"></i> Unique and Professional Quality</li>
-		                        <li><i class="icon-ok"></i> Going 'The Extra Mile'</li>
-		                    </ul>                    
+							<p>At Wood Street Windows, we pride ourselves on supplying high quality and durable aluminium windows and doors. Located in the heart of Bairnsdale, we are your local manufacturer. We pride ourselves on constantly providing the customer service to match our superior product range.</p>
 		                </div>
 		            </div>
 
@@ -151,7 +145,7 @@
 			</div><!--/row-->	
 			<!-- End Info Blokcs -->
 
-			<!-- Our Clients -->
+			<!-- Our Clients
 			<div id="clients-flexslider" class="flexslider home clients">
 		        <div class="headline"><h2>Our Partners</h2></div>	
 				<ul class="slides">
@@ -233,8 +227,8 @@
 		                    <img src="{{ asset('/img/clients/wer.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
-				</ul>
-			</div><!--/flexslider-->
+				</ul> 
+			</div>--><!--/flexslider-->
 			<!-- End Our Clients -->
 		</div><!--/container-->	
 @endsection
