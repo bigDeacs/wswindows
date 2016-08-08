@@ -28,7 +28,7 @@ class PagesController extends Controller {
 		$this->data = [
 			'brand'   => Brand::find(1)
 	    ];
-	}	
+	}
 
 	/**
 	 * Show the application welcome screen to the user.
@@ -218,8 +218,8 @@ class PagesController extends Controller {
 		Mail::send('emails.contact',
 	        ['name' => $request->get('name'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'info' => $request->get('info')], function($message)
 	   	 	{
-	        	$message->from('manillaglass@bigpond.com');
-	        	$message->to('manillaglass@bigpond.com', 'Sales')->cc('brentdeacon23@gmail.com', 'Admin')->subject('Manilla Glass Contact Request');
+	        	$message->from('info@wswindows.com.au');
+	        	$message->to('info@wswindows.com.au', 'Sales')->cc('brentdeacon23@gmail.com', 'Admin')->subject('Wood Street Windows Contact Request');
 	    	}
 	    );
 	    return redirect('thankyou');

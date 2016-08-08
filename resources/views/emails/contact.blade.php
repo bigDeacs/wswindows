@@ -1,4 +1,4 @@
-<h1>Manilla Glass Contact Request</h1>
+<h1>Wood Street Windows Contact Request</h1>
 Name: {!! $name !!}<br />
 Email: {!! $email !!}<br />
 Phone Number: {!! $phone !!}<br />
