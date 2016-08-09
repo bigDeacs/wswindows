@@ -124,60 +124,34 @@ class PagesController extends Controller {
 		return view('door', $data);
 	}
 
-	public function commercials()
+	public function garageDoors()
 	{
-		$this->data['products'] = Product::where('status', '=', 1)->whereHas('type', function($q)
-		{
-		    $q->where('name', '=', 'Commercial');
-
-		})->get();
 		$data = $this->data;
-		return view('commercials', $data);
+		return view('garage-doors', $data);
 	}
 
-	public function commercial($id)
+	public function glassReplacement()
 	{
-		$this->data['product'] = Product::where('url', '=', $id)->where('status', '=', 1)->first();
-		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('type', function($q)
-		{
-		    $q->where('name', '=', 'Commercial');
-
-		})->take(4)->get();
-		foreach($this->data['products'] as $product)
-		{
-			$image = $product->images()->first();
-			array_set($product, 'image', $image['file']);
-		}
 		$data = $this->data;
-		return view('commercial', $data);
+		return view('glass-replacement', $data);
 	}
 
-	public function screens()
+	public function balustrades()
 	{
-		$this->data['products'] = Product::where('status', '=', 1)->whereHas('type', function($q)
-		{
-		    $q->where('name', '=', 'Screens');
-
-		})->get();
 		$data = $this->data;
-		return view('screens', $data);
+		return view('balustrades', $data);
 	}
 
-	public function screen($id)
+	public function security()
 	{
-		$this->data['product'] = Product::where('url', '=', $id)->where('status', '=', 1)->first();
-		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('type', function($q)
-		{
-		    $q->where('name', '=', 'Screens');
-
-		})->take(4)->get();
-		foreach($this->data['products'] as $product)
-		{
-			$image = $product->images()->first();
-			array_set($product, 'image', $image['file']);
-		}
 		$data = $this->data;
-		return view('screen', $data);
+		return view('security', $data);
+	}
+
+	public function showerScreens()
+	{
+		$data = $this->data;
+		return view('shower-screens', $data);
 	}
 
 	public function colours()

@@ -19,7 +19,7 @@ Route::controllers([
 ]);
 
 Route::group(['before' => 'auth', 'prefix' => 'home'], function()
-{	
+{
 	Route::get('/', 'HomeController@index');
 
 	# Products
@@ -118,10 +118,13 @@ Route::get('windows', 'PagesController@windows');
 Route::get('window/{id}', 'PagesController@window');
 Route::get('doors', 'PagesController@doors');
 Route::get('door/{id}', 'PagesController@door');
-Route::get('commercials', 'PagesController@commercials');
-Route::get('commercial/{id}', 'PagesController@commercial');
-Route::get('screens', 'PagesController@screens');
-Route::get('screen/{id}', 'PagesController@screen');
+
+Route::get('garage-doors', 'PagesController@garageDoors');
+Route::get('glass-replacement', 'PagesController@glassReplacement');
+Route::get('balustrades', 'PagesController@balustrades');
+Route::get('security', 'PagesController@security');
+Route::get('shower-screens', 'PagesController@showerScreens');
+
 Route::get('colours', 'PagesController@colours');
 Route::get('brochures', 'PagesController@brochures');
 Route::get('faqs/{id}', 'PagesController@faqs');
