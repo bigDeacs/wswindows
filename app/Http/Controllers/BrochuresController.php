@@ -43,26 +43,26 @@ class BrochuresController extends Controller {
 		$brochure = Brochure::create($request->all());
 		if($request->hasFile('image'))
 		{
-			if($request->file('image')->isValid()) 
+			$file = $request->file('image');
+			if($file->isValid())
 			{
-				$image = $request->file('image');
-				$moveImage = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
-				$brochure->thumb = $filename;
-			} else {
-				return redirect()->back()->withInput();
-			}	
-		} 
-		if($request->hasFile('file'))
-		{
-			if($request->file('file')->isValid()) 
-			{
-				$upload = $request->file('file');
-				$moveUpload = $upload->move(storage_path() . '/uploads', $filename = time() . '-' . $upload->getClientOriginalName());
-				$brochure->file = $filename;
+				$file->move(storage_path() . '/uploads/', ($filename = time() . '-' . $file->getClientOriginalName()));
+				$brochure->thumb = ('/uploads/' . $filename);
 			} else {
 				return redirect()->back()->withInput();
 			}
-		} 
+		}
+		if($request->hasFile('file'))
+		{
+			$file = $request->file('file');
+			if($file->isValid())
+			{
+				$file->move(storage_path() . '/uploads/', ($filename = time() . '-' . $file->getClientOriginalName()));
+				$brochure->file = ('/uploads/' . $filename);
+			} else {
+				return redirect()->back()->withInput();
+			}
+		}
 		$brochure->save();
 		return redirect('home/brochures');
 	}
@@ -75,7 +75,7 @@ class BrochuresController extends Controller {
 	 */
 	public function show($id)
 	{
-		return redirect('home/brochures');	
+		return redirect('home/brochures');
 	}
 
 	/**
@@ -98,11 +98,11 @@ class BrochuresController extends Controller {
 		$brochure->update($request->all());
 		if($request->hasFile('image'))
 		{
-			if($request->file('image')->isValid()) 
+			$file = $request->file('image');
+			if($request->file('image')->isValid())
 			{
-				$image = $request->file('image');
-				$moveImage = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
-				$brochure->update(['thumb' => $filename]);
+				$file->move(storage_path() . '/uploads/', ($filename = time() . '-' . $file->getClientOriginalName()));
+				$brochure->thumb = ('/uploads/' . $filename);
 				File::delete(storage_path() . '/uploads/' . $oldImage);
 			} else {
 				return redirect()->back()->withInput();
@@ -110,17 +110,17 @@ class BrochuresController extends Controller {
 		}
 		if($request->hasFile('file'))
 		{
-			if($request->file('file')->isValid()) 
+			$file = $request->file('file');
+			if($file->isValid())
 			{
-				$upload = $request->file('file');
-				$moveUpload = $upload->move(storage_path() . '/uploads', $filename = time() . '-' . $upload->getClientOriginalName());
-				$brochure->update(['file' => $filename]);
+				$file->move(storage_path() . '/uploads/', ($filename = time() . '-' . $file->getClientOriginalName()));
+				$brochure->file = ('/uploads/' . $filename);
 				File::delete(storage_path() . '/uploads/' . $oldUpload);
 			} else {
 				return redirect()->back()->withInput();
 			}
 		}
-		$brochure->save();		
+		$brochure->save();
 		return redirect('home/brochures');
 	}
 

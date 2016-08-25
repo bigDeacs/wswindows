@@ -41,16 +41,16 @@ class BrandsController extends Controller {
 		$brand = Brand::create($request->all());
 		if($request->hasFile('logo'))
 		{
-			if($request->file('logo')->isValid()) 
+			$file = $request->file('logo');
+			if($file->isValid())
 			{
-				$logo = $request->file('logo');
-				$moveLogo = $logo->move(storage_path() . '/uploads', $filename = time() . '-' . $logo->getClientOriginalName());
-				$brand->logo = $filename;
+				$file->move(storage_path() . '/uploads/', ($filename = time() . '-' . $file->getClientOriginalName()));
+				$brand->logo = ('/uploads/' . $filename);
 			} else {
 				return redirect()->back()->withInput();
-			}	
-			$brand->save();	
-		} 
+			}
+			$brand->save();
+		}
 		return redirect('home/brands');
 	}
 
@@ -84,17 +84,17 @@ class BrandsController extends Controller {
 		$brand->update($request->all());
 		if($request->hasFile('logo'))
 		{
-			if($request->file('logo')->isValid()) 
+			$file = $request->file('logo');
+			if($file->isValid())
 			{
-				$logo = $request->file('logo');
-				$moveLogo = $logo->move(storage_path() . '/uploads', $filename = time() . '-' . $logo->getClientOriginalName());
-				$brand->update(['logo' => $filename]);
+				$file->move(storage_path() . '/uploads/', ($filename = time() . '-' . $file->getClientOriginalName()));
+				$brand->logo = ('/uploads/' . $filename);
 				File::delete(storage_path() . '/uploads/' . $oldLogo);
 			} else {
 				return redirect()->back()->withInput();
 			}
 		}
-		$brand->save();		
+		$brand->save();
 		return redirect()->route('home.brands.show', [$brand->id]);
 	}
 

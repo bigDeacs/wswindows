@@ -51,7 +51,7 @@ class ProductsController extends Controller {
 	 */
 	public function store(CreateProduct $request)
 	{
-		if($request->brochure_id == "default") 
+		if($request->brochure_id == "default")
 		{
 			$request->merge(array('brochure_id' => null));
 		}
@@ -65,15 +65,13 @@ class ProductsController extends Controller {
 		{
 			$images = $request->file('images');
 			foreach($images as $image) {
-				$move = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
-				if($move) {
-					$imageData = Image::create([
-						'name' => $product->name,
-						'file' => $filename,
-						'product' => 1
-					]);
-					$sync[] = $imageData->id;
-				}
+				$image->move(storage_path() . '/uploads/', ($filename = time() . '-' . $image->getClientOriginalName()));
+				$imageData = Image::create([
+					'name' => $product->name,
+					'file' => '/uploads/' . $filename,
+					'product' => 1
+				]);
+				$sync[] = $imageData->id;
 			}
 			$product->images()->sync($sync);
 		}
@@ -114,13 +112,13 @@ class ProductsController extends Controller {
 
 	public function update(UpdateProduct $request, $id)
 	{
-		if($request->brochure_id == "default") 
+		if($request->brochure_id == "default")
 		{
 			$request->merge(array('brochure_id' => null));
 		}
 		$product = Product::find($id);
 		$product->update($request->all());
-		$product->save();		
+		$product->save();
 		if($request->input('colour_list') == null) {
 			$product->colours()->sync([]);
 		} else {
@@ -130,15 +128,13 @@ class ProductsController extends Controller {
 		{
 			$images = $request->file('images');
 			foreach($images as $image) {
-				$move = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
-				if($move) {
-					$imageData = Image::create([
-						'name' => $product->name,
-						'file' => $filename,
-						'product' => 1
-					]);
-					$sync[] = $imageData->id;
-				}
+				$image->move(storage_path() . '/uploads/', ($filename = time() . '-' . $image->getClientOriginalName()));
+				$imageData = Image::create([
+					'name' => $product->name,
+					'file' => '/uploads/' . $filename,
+					'product' => 1
+				]);
+				$sync[] = $imageData->id;
 			}
 			$oldImages = $product->images()->get();
 			foreach($oldImages as $oldImage) {
