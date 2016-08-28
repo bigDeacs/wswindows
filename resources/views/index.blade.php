@@ -21,7 +21,7 @@
 			        <div class="slide-body" data-group="slide">
 			          <img src="/uploads/{!! $offer->file !!}" alt="{!! $offer->promo !!}">
 			        </div>
-		      	</li>        
+		      	</li>
 			    @endforeach
 	      		<li>
 			        <div class="slide-body" data-group="slide">
@@ -31,11 +31,6 @@
 				<li>
 			        <div class="slide-body" data-group="slide">
 			          <img src="{{ asset('/img/full-width/3.jpg') }}" alt="Surfer riding barrel wave">
-			        </div>
-		      	</li>
-			  	<li>
-			        <div class="slide-body" data-group="slide">
-			          <img src="{{ asset('/img/full-width/4.jpg') }}" alt="Gold Coast City, Night time">
 			        </div>
 		      	</li>
 	    	</ul>
@@ -51,16 +46,16 @@
 	            <div class="col-md-9 col-xs-12">
 	                <h1><span>High quality aluminium windows and doors.</span></h1>
 	                <p class="hidden-xs">Wood Street Windows is a local, family-owned-and-operated business dedicated to providing a wide variety of products.</p>
-	            </div>            
+	            </div>
 	            <div class="col-md-3 hidden-xs">
-	                <a href="/about" class="btn-more btn-more-orange hover-effect">Find Out More</a>            
+	                <a href="/about" class="btn-more btn-more-orange hover-effect">Find Out More</a>
 	            </div>
 	        </div>
 	    </div>
 	</div><!--/row-->
 	<!-- End Intro Block -->
 	<!--=== Content Part ===-->
-	<div class="container">	
+	<div class="container">
 		<!-- Recent Works -->
 	    <div class="headline"><h2>Popular Products</h2></div>
 		    <div class="row">
@@ -74,7 +69,7 @@
 				                        	<img class="img-responsive" src="/uploads/{!! $product->image !!}" alt="{!! $product->name !!}" />
 				                        </a>
 				                    </div>
-				                    <a class="btn-more hover-effect hidden-xs" href="/{!! $product->type->url !!}/{!! $product->url !!}">read more +</a>					
+				                    <a class="btn-more hover-effect hidden-xs" href="/{!! $product->type->url !!}/{!! $product->url !!}">read more +</a>
 				                </div>
 				                <div class="caption">
 				                    <h3 style="min-height: 66px;"><a class="hover-effect" href="/{!! $product->type->url !!}/{!! $product->url !!}">{!! $product->name !!}</a></h3>
@@ -99,16 +94,16 @@
 					    		<div class="service service-blue">
 					    			<div class="desc">
 					                    <p class="hidden-xs">{!! $brochure->description !!}</p>
-						                <a href="/uploads/{!! $brochure->file !!}" target="_blank" class="btn-more btn-more-orange btn-block hover-effect">Find Out More</a>            
+						                <a href="/uploads/{!! $brochure->file !!}" target="_blank" class="btn-more btn-more-orange btn-block hover-effect">Find Out More</a>
 					    			</div>
-					    		</div>	
+					    		</div>
 					    	</div>
 					    @endif
 				    @endif
 			    @endforeach
 			</div><!--/row-->
 			<!-- End Service Blokcs -->
-		    
+
 			<!-- Info Blokcs -->
 			<div class="row">
 		    	<!-- Welcome Block -->
@@ -127,7 +122,7 @@
 		                <p>-Small Blurb-</p>
 		                <small>Managing Director</small>
 		            </blockquote>-->
-		        </div><!--/col-md-8-->        
+		        </div><!--/col-md-8-->
 
 		        <!-- Latest Shots -->
 		        <div class="col-md-3 hidden-xs">
@@ -142,95 +137,95 @@
 					    @endif
 				    @endforeach
 		        </div><!--/col-md-4-->
-			</div><!--/row-->	
+			</div><!--/row-->
 			<!-- End Info Blokcs -->
 
 			<!-- Our Clients
 			<div id="clients-flexslider" class="flexslider home clients">
-		        <div class="headline"><h2>Our Partners</h2></div>	
+		        <div class="headline"><h2>Our Partners</h2></div>
 				<ul class="slides">
 					<li>
 		                <a href="http://www.alspec.com.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/alspec_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/alspec_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/alspec.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.bradnams.com.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/bradnams_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/bradnams_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/bradnams.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.capral.com.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/capral_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/capral_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/capral.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.aneetawindows.com.au/home.asp" target="_blank">
-		                    <img src="{{ asset('/img/clients/aneeta_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/aneeta_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/aneeta.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.breezway.com.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/breezway_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/breezway_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/breezway.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.centor.com.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/centor_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/centor_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/centor.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.austyle.com.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/austyle_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/austyle_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/austyle.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.lockweb.com.au/en/site/lockweb/" target="_blank">
-		                    <img src="{{ asset('/img/clients/lockwood_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/lockwood_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/lockwood.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://coolingbros.com.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/coolingbrothers_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/coolingbrothers_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/coolingbrothers.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.viridianglass.com/default.aspx" target="_blank">
-		                    <img src="{{ asset('/img/clients/viridian_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/viridian_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/viridian.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.walshsglass.com.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/walshglass_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/walshglass_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/walshglass.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.awa.org.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/awa_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/awa_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/awa.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
 		                <a href="http://www.wers.net/wers-home" target="_blank">
-		                    <img src="{{ asset('/img/clients/wer_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/wer_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/wer.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
-				</ul> 
+				</ul>
 			</div>--><!--/flexslider-->
 			<!-- End Our Clients -->
-		</div><!--/container-->	
+		</div><!--/container-->
 @endsection
 
 @section('scripts')
@@ -247,11 +242,11 @@
 		  });
 		});
 	</script>
-	<script>	
-		$(document).ready(function(){	  
-			$('.responsive-slider').responsiveSlider({		
-				autoplay: true,		interval: 8000,		transitionTime: 500	  
-			});	
-		});	
+	<script>
+		$(document).ready(function(){
+			$('.responsive-slider').responsiveSlider({
+				autoplay: true,		interval: 8000,		transitionTime: 500
+			});
+		});
 	</script>
 @endsection
