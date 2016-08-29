@@ -8,6 +8,12 @@
 
 @section('head')
 	<link href="{{ asset('/css/pages/portfolio-v2.css') }}" rel="stylesheet" media="screen">
+	<style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
 @endsection
 
 @section('content')
