@@ -175,10 +175,10 @@ class PagesController extends Controller {
 		return view('faqs/' . $id, $data);
 	}
 
-	public function about()
+	public function showroom()
 	{
 		$data = $this->data;
-		return view('about', $data);
+		return view('showroom', $data);
 	}
 
 	public function contact()

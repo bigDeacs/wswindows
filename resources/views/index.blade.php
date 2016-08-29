@@ -40,14 +40,16 @@
 	</div>
 	<!-- RESPONSIVE SLIDER - END -->
 	<!--=== Intro Block ===-->
-	<div class="intro">
+	<div class="intro hidden-xs">
 	    <div class="container">
 	        <div class="row">
-	            <div class="col-md-9 col-xs-12">
-	                <h1><span>High quality aluminium windows and doors.</span></h1>
+							<div class="col-md-12">
+								<h1><span>Proud supplier of high quality aluminium products by Bradnam’s Windows & Doors</span></h1>
+							</div>
+	            <div class="col-md-9">
 	                <p class="hidden-xs">Wood Street Windows is a local, family-owned-and-operated business dedicated to providing a wide variety of products.</p>
 	            </div>
-	            <div class="col-md-3 hidden-xs">
+	            <div class="col-md-3">
 	                <a href="/about" class="btn-more btn-more-orange hover-effect">Find Out More</a>
 	            </div>
 	        </div>
@@ -80,29 +82,6 @@
 			    @endforeach
 		    </div><!--/row-->
 			<!-- End Recent Works -->
-
-			<!-- Service Blocks -->
-			<div class="row">
-				@foreach($brochures as $brochure)
-					@if(isset($brochure->rank))
-						@if($brochure['rank'] == 1 || $brochure['rank'] == 2 || $brochure['rank'] == 3)
-					        <div class="col-md-4">
-					        	@if($brochure->icon)
-					        		<i class="{!! $brochure->icon !!} icon-3x home-icon"></i>
-					        	@endif
-					        	<div class="headline"><h3>{!! $brochure->name !!}</h3></div>
-					    		<div class="service service-blue">
-					    			<div class="desc">
-					                    <p class="hidden-xs">{!! $brochure->description !!}</p>
-						                <a href="/uploads/{!! $brochure->file !!}" target="_blank" class="btn-more btn-more-orange btn-block hover-effect">Find Out More</a>
-					    			</div>
-					    		</div>
-					    	</div>
-					    @endif
-				    @endif
-			    @endforeach
-			</div><!--/row-->
-			<!-- End Service Blokcs -->
 
 			<!-- Info Blokcs -->
 			<div class="row">

@@ -136,8 +136,8 @@
                         </a>
 											</li>
 	                    <li>
-	                        <a href="/about">
-	                            About
+	                        <a href="/showroom">
+	                            Showroom
 	                        </a>
 	                    </li>
 	                    <li>

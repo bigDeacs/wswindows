@@ -128,7 +128,7 @@ Route::get('shower-screens', 'PagesController@showerScreens');
 Route::get('colours', 'PagesController@colours');
 Route::get('brochures', 'PagesController@brochures');
 Route::get('faqs/{id}', 'PagesController@faqs');
-Route::get('about', 'PagesController@about');
+Route::get('showroom', 'PagesController@showroom');
 Route::get('contact', 'PagesController@contact');
 Route::post('contact', ['as' => 'contactRequest', 'uses' => 'PagesController@contactRequest']);
 Route::get('thankyou', 'PagesController@thankyou');
