@@ -130,11 +130,11 @@
 															<li><a href="/shower-screens">Shower Screens</a></li>
 	                        </ul>
 	                    </li>
-						<!--<li>
-							<a href="/faqs/glassrules">
-	                            FAQ's
-	                        </a>
-						</li>-->
+											<li>
+												<a href="/brochures">
+	                            Brochures
+                        </a>
+											</li>
 	                    <li>
 	                        <a href="/about">
 	                            About
