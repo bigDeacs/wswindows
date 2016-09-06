@@ -170,14 +170,17 @@
 						<ul class="col-sm-6">
 							<li><a href="/windows">Windows</a></li>
 		                    <li><a href="/doors">Doors</a></li>
-							<li><a href="/commercials">Commercial</a></li>
 							<li><a href="/brochures">Brochures</a></li>
+              <li><a href="/garage-doors">Garage Doors</a></li>
+              <li><a href="/glass-replacement">Glass Replacement</a></li>
+
 		                </ul>
 		                <ul class="col-sm-6">
-							<li><a href="/colours">Colours</a></li>
-							<li><a href="/faqs/glassrules">FAQ's</a></li>
-		                    <li><a href="/about">About</a></li>
+                        <li><a href="/showroom">Showroom</a></li>
 		                    <li><a href="/contact">Contact</a></li>
+                        <li><a href="/balustrades">Balustrades</a></li>
+                        <li><a href="/security">Security</a></li>
+                        <li><a href="/shower-screens">Shower Screens</a></li>
 		                </ul>
 					</p>
 				</div><!--/col-md-4-->
