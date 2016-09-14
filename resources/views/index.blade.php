@@ -50,7 +50,7 @@
 	                <p class="hidden-xs">Wood Street Windows is a local, family-owned-and-operated business dedicated to providing a wide variety of products.</p>
 	            </div>
 	            <div class="col-md-3">
-	                <a href="/about" class="btn-more btn-more-orange hover-effect">Find Out More</a>
+	                <a href="/showroom" class="btn-more btn-more-orange hover-effect">Find Out More</a>
 	            </div>
 	        </div>
 	    </div>
